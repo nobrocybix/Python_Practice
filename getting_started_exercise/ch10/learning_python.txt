@@ -1,0 +1,4 @@
+In Python you can Web Development.
+In Python you can CLI Development.
+In Python you can GUI Development.
+In Python you can Game Development.

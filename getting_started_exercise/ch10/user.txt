@@ -1,0 +1,1 @@
+& C:/Users/nobrocybix/AppData/Local/Programs/Python/Python312/python.exe "d:/temp/Python/python程式設計 從入門到實踐/exercise/ch10/10_2.py"
