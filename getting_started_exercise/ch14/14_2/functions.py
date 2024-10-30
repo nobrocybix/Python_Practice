@@ -3,7 +3,7 @@ import sys
 
 from bullet import Bullet
 
-def check_event(g_settings, screen, ship, bullets, gs):
+def check_event(g_settings, screen, ship, bullets, button, gs):
     '''Respond to the keypresses'''
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -13,7 +13,11 @@ def check_event(g_settings, screen, ship, bullets, gs):
             check_key_down_event(event, g_settings, screen, ship, bullets, gs)
 
         elif event.type == pygame.KEYUP:
-            check_key_up_event(event, ship)
+            check_key_up_event(event, ship, gs)
+
+        elif event.type == pygame.MOUSEBUTTONDOWN:
+            mouse_x, mouse_y = pygame.mouse.get_pos()
+            check_mouse_down_event(button, mouse_x, mouse_y, gs)
 
 def check_key_down_event(event, g_settings, screen, ship, bullets, gs):
     '''Respond to the KEYDOWN'''
@@ -29,12 +33,18 @@ def check_key_down_event(event, g_settings, screen, ship, bullets, gs):
     elif event.key == pygame.K_p:
         gs.running = True      
 
-def check_key_up_event(event, ship):
+def check_key_up_event(event, ship, gs):
     '''Respond to the KEYUP'''
     if event.key == pygame.K_DOWN:
         ship.k_down_flag = False
     elif event.key == pygame.K_UP:
         ship.k_up_flag = False
+
+def check_mouse_down_event(button, mouse_x, mouse_y, gs):
+    '''Respond to the mouse down'''
+    if button.rect.collidepoint(mouse_x, mouse_y):
+        gs.running = True
+        pygame.mouse.set_visible(False)
 
 def ship_update(ship):
     '''Update ship to the screen'''
@@ -59,10 +69,13 @@ def bullet_update(bullets, screen, enemy, gs):
     remove_bullets(bullets, screen_rect, gs)
     bullets.update()
 
-def update_screen(ship, enemy):
+def update_screen(ship, enemy, gs, button):
     '''Update the object to the screen'''
     ship.create_ship()
     enemy.create_enemy()
+    if gs.running == False:
+        button.draw_button()
+        pygame.mouse.set_visible(True)
 
 def remove_bullets(bullets, screen_rect, gs):
     '''Remove the bullet out of screen'''
