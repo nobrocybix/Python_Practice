@@ -7,7 +7,7 @@ class Ship():
         self.ai_settings = ai_settings        
 
         # 加载飞船图像并获取其外接矩形
-        self.image = pygame.image.load("images/ship.bmp")  # 加載飛船的圖片
+        self.image = pygame.image.load(r"D:\temp\Python\Python_Practice\getting_started_exercise\alien_invasion\images\ship.bmp")  # 加載飛船的圖片
         self.rect = self.image.get_rect()  # 獲取圖片的外接矩形，這個矩形用來控制飛船的位置和大小
         self.screen_rect = screen.get_rect()  # 獲取屏幕的外接矩形，這樣可以用來對齊飛船
 

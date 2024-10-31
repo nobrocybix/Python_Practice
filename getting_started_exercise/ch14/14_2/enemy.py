@@ -13,7 +13,7 @@ class Enemy():
         # Get rect of the screen and settings
         self.screen = screen
         self.screen_rect = self.screen.get_rect()
-        self.s = g_settings.enemy_speed_factor
+        
 
         # The enemy object's size and start position.
         self.rect = pygame.Rect(0, 0, self.width, self.height)
@@ -30,8 +30,9 @@ class Enemy():
         '''Draw the emeny to the screen.'''
         self.screen.fill(self.rect_color, self.rect)
 
-    def update(self):
+    def update(self, g_settings):
         '''The enemy's movement'''
+        self.s = g_settings.enemy_speed_factor
         self.y += (self.s * self.direction_flag)
 
         if self.rect.bottom >= self.screen_rect.bottom:

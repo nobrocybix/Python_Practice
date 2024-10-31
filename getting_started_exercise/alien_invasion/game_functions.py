@@ -59,6 +59,7 @@ def check_play_button(screen, ai_settings, aliens, bullets, ship, play_button, m
 
     if button_clicked and not stats.game_active:
 
+        ai_settings.initialize_dynamic_settings()
         start_game(stats, aliens, bullets)
 
         # Create a new fleet and center the ship
@@ -95,11 +96,13 @@ def update_bullets(ai_settings, screen, ship, aliens, bullets):
 def check_bullet_alien_collistions(ai_settings, screen, ship, aliens, bullets):
     '''Response to bullet-alien collistions'''
     collisions = pygame.sprite.groupcollide(bullets, aliens, True, True)
-
+        
     if len(aliens) == 0:
-        # Destroy existing bullets, and create new fleets.
+        # If the entire fleet is destroyed, start a new level.
         bullets.empty()
-        create_fleet(ai_settings, screen, ship, aliens)  
+        ai_settings.increase_speed()
+
+        create_fleet(ai_settings, screen, ship, aliens)
 
 def fire_bullet(settings, screen, ship, bullets):
     """Fire a bullet if limit not reached yet."""

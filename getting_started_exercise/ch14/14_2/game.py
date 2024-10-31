@@ -36,8 +36,8 @@ def run_game():
 
         if gs.running:
             ship.update()
-            enemy.update()
-            f.bullet_update(bullets, screen, enemy, gs)
+            enemy.update(g_settings)
+            f.bullet_update(bullets, screen, enemy, gs, g_settings)
         
         f.update_screen(ship, enemy, gs, button)
         pygame.display.flip()
