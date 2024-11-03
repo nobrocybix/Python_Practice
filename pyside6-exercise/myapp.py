@@ -1,5 +1,5 @@
-from PyQt6.QtCore import QSize
-from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton
+from PySide6.QtCore import QSize
+from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton
 
 from random import choice
 import sys
@@ -15,7 +15,7 @@ window_titles = [
 class MainWindow(QMainWindow):
 
     def __init__(self):
-        super(QMainWindow, self).__init__()
+        super().__init__()
 
         self.setWindowTitle("這是視窗")
         self.default_checked = True
