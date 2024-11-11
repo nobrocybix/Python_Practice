@@ -33,9 +33,6 @@ class Main(QMainWindow):
     def row_changed(self, i):
         print("current row: " + str(i))
                      
-
-
-
 app = QApplication(sys.argv)
 window = Main()
 

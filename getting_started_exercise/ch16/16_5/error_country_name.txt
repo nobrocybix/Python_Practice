@@ -1,0 +1,70 @@
+ERROR - Arab World
+ERROR - Caribbean small states
+ERROR - East Asia & Pacific (all income levels)
+ERROR - East Asia & Pacific (developing only)
+ERROR - Euro area
+ERROR - Europe & Central Asia (all income levels)
+ERROR - Europe & Central Asia (developing only)
+ERROR - European Union
+ERROR - Heavily indebted poor countries (HIPC)
+ERROR - High income
+ERROR - High income: nonOECD
+ERROR - High income: OECD
+ERROR - Latin America & Caribbean (all income levels)
+ERROR - Latin America & Caribbean (developing only)
+ERROR - Least developed countries: UN classification
+ERROR - Low & middle income
+ERROR - Low income
+ERROR - Lower middle income
+ERROR - Middle East & North Africa (all income levels)
+ERROR - Middle East & North Africa (developing only)
+ERROR - Middle income
+ERROR - North America
+ERROR - OECD members
+ERROR - Other small states
+ERROR - Pacific island small states
+ERROR - Small states
+ERROR - South Asia
+ERROR - Sub-Saharan Africa (all income levels)
+ERROR - Sub-Saharan Africa (developing only)
+ERROR - Upper middle income
+ERROR - World
+ERROR - American Samoa
+ERROR - Antigua and Barbuda
+ERROR - Aruba
+ERROR - Bahamas, The
+ERROR - Barbados
+ERROR - Bermuda
+ERROR - Cayman Islands
+ERROR - Channel Islands
+ERROR - Comoros
+ERROR - Curacao
+ERROR - Faeroe Islands
+ERROR - Fiji
+ERROR - French Polynesia
+ERROR - Gibraltar
+ERROR - Grenada
+ERROR - Isle of Man
+ERROR - Kiribati
+ERROR - Kosovo
+ERROR - Marshall Islands
+ERROR - Micronesia, Fed. Sts.
+ERROR - New Caledonia
+ERROR - Northern Mariana Islands
+ERROR - Palau
+ERROR - Qatar
+ERROR - Samoa
+ERROR - Sint Maarten (Dutch part)
+ERROR - Solomon Islands
+ERROR - St. Kitts and Nevis
+ERROR - St. Lucia
+ERROR - St. Martin (French part)
+ERROR - St. Vincent and the Grenadines
+ERROR - Tonga
+ERROR - Trinidad and Tobago
+ERROR - Turks and Caicos Islands
+ERROR - Tuvalu
+ERROR - Vanuatu
+ERROR - Vietnam
+ERROR - Virgin Islands (U.S.)
+ERROR - West Bank and Gaza
